@@ -1,0 +1,13 @@
+.Button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  color: $c-lily;
+  border: 1px solid $c-lily;
+  background-color: transparent;
+
+  @media (min-width: $md) {
+    padding: 10px 20px;
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,48 @@
+.Select {
+  position: relative;
+  width: 300px;
+  cursor: pointer;
+
+  &-dropdown {
+    padding: 5px 10px;
+    border: 1px solid $c-dark-gray;
+
+    &-selected-item {
+      font-size: 1.6rem;
+      color: $c-dark-gray;
+
+      @media (min-width: $md) {
+        font-size: 2rem;
+      }
+    }
+
+    &-item {
+      padding: 5px 10px;
+      font-size: 1.8rem;
+    }
+
+    &-menu {
+      position: absolute;
+      left: 0;
+      width: 300px;
+      background-color: $bg-white;
+      box-shadow: 0px 8px 8px 0px rgba(60, 60, 63, 0.25);
+    }
+
+    &-toggle {
+      position: absolute;
+      right: 10px;
+      top: 7px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      @media (min-width: $md) {
+        top: 10px;
+      }
+
+      &-opened {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

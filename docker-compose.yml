@@ -1,0 +1,12 @@
+version: '1.0'
+
+services:
+  webclient:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        API_KEY: 'AIzaSyAbZuwlc-zXeEqzPZ5PWCJSf1WtPtZxcmo'
+    container_name: webclient
+    ports:
+      - '80:80'

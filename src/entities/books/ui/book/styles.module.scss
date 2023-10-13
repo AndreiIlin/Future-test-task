@@ -1,0 +1,43 @@
+.Book {
+  padding: 15px;
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-gap: 20px;
+  background-color: lightgray;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &-media {
+    height: 320px;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-img {
+    height: 100%;
+  }
+
+  &-category {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $c-dark-gray;
+    text-decoration: underline;
+  }
+
+  &-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  &-authors {
+    font-size: 1.6rem;
+    color: $c-dark-gray;
+  }
+}

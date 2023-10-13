@@ -1,0 +1,100 @@
+.BookLayout {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $c-light-gray;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &-media {
+    min-height: 300px;
+    width: 100%;
+    padding: 0;
+    background-color: $bg-light-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @media (min-width: $md) {
+      min-height: 100px;
+      width: 50%;
+      padding: 30px;
+    }
+
+    @media (min-width: $lg) {
+      min-height: 600px;
+      padding: 20px;
+    }
+
+    @media (min-width: $xl) {
+      min-height: 800px;
+      padding: 30px;
+    }
+  }
+
+  &-image {
+    height: 100%;
+  }
+
+  &-content {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    grid-gap: 20px;
+
+    @media (min-width: $md) {
+      width: 50%;
+    }
+  }
+
+  &-categories {
+    font-size: 1.4rem;
+    color: $c-dark-gray;
+    font-weight: 300;
+
+    @media (min-width: $md) {
+      font-size: 1.6rem;
+    }
+
+    @media (min-width: $lg) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 2rem;
+
+    @media (min-width: $lg) {
+      font-size: 2.6rem;
+    }
+  }
+
+  &-authors {
+    font-size: 1.4rem;
+    color: $c-dark-gray;
+    font-weight: 300;
+
+
+    @media (min-width: $lg) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &-description {
+    padding: 15px;
+    font-size: 1.4rem;
+    border: 1px solid $c-dark-gray;
+
+
+    @media (min-width: $lg) {
+      font-size: 1.6rem;
+    }
+  }
+}
